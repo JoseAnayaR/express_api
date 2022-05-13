@@ -41,7 +41,7 @@ app.put('/v1/explorers/:id', (req, res) => {
 })
 
 //DELETE Crear un endpoint para eliminar un explorer
-app.delete('/v1/explorers/id:', (req, res) => {
+app.delete('/v1/explorers/:id:', (req, res) => {
     console.log(`Api Explorers DELETE request ${new Date()}`)
     console.log(`Delete explorer with id ${req.params.id}`)
     const requestBody = req.body //Parámetros de un cliente
